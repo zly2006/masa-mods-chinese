@@ -70,7 +70,7 @@
     "minihud.config.generic.name.spawnRealOuterOverlayEnabled": "RealOuter | 繪製重生點移除範圍",
     "minihud.config.generic.name.spawnRealRedstoneOverlayEnabled": "RealRedstone | 繪製重生點弱載入範圍",
     "minihud.config.generic.name.spawnableColumnHeightsOverlayRadius": "SpawnableColumn | 頂層方塊顯示範圍",
-    "minihud.config.generic.name.structuresRenderThrough": "StructuresRender | 結構繪製貫穿",
+    "minihud.config.generic.name.structuresRenderThrough": "StructuresRender | 結構繪製透視",
     "minihud.config.generic.name.textPosX": "TextPosX | 文字 HUD 橫移",
     "minihud.config.generic.name.textPosY": "TextPosY | 文字 HUD 縱移",
     "minihud.config.generic.name.timeDayDivisor": "TimeDayDivisor | 時間因數",
