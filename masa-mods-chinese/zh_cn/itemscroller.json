@@ -145,7 +145,7 @@
     "itemscroller.config.hotkeys.comment.modifierMoveEverything": "按住该快捷键时，在物品上滚动，会使所有物品移动到另一个容器",
     "itemscroller.config.hotkeys.comment.modifierMoveMatching": "按住该快捷键时，在物品上滚动，会使所有匹配的物品移动到另一个容器",
     "itemscroller.config.hotkeys.comment.modifierMoveStack": "按住该快捷键时，在物品上滚动时，会使整组物品移动到另一个容器",
-    "itemscroller.config.hotkeys.comment.modifierToggleVillagerGlobalFavorite": "在中键点击交易时按住该辅助键，可以切换该交易的全局收藏状态.\n全局收藏适用于没有设置「本地」村民交易收藏的村民",
+    "itemscroller.config.hotkeys.comment.modifierToggleVillagerGlobalFavorite": "在中键点击交易时按住该辅助键，可以切换该交易的全局收藏状态\n全局收藏适用于没有设置「本地」村民交易收藏的村民",
     "itemscroller.config.hotkeys.comment.sortInventory": "对鼠标指针所在的物品栏进行整理",
     "itemscroller.gui.button.config_gui.generic": "通用",
     "itemscroller.gui.button.config_gui.hotkeys": "快捷键",
