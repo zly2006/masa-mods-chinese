@@ -3,7 +3,7 @@ name: Crowdin Sync Action
 on:
   push:
     paths:
-      - 'masa-mods-chinese/en_us/**'
+      - 'masa-mods-chinese/**'
       - 'crowdin.yml'
 
 jobs:
