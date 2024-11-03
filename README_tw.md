@@ -22,7 +22,7 @@
 如果您想查看醉夢巔峰 1.20.1 版本的漢化，請點擊 [這裡](https://github.com/DreamingLri/masa-mods-chinese/tree/1.20)
 
 > [!WARNING]  
-> 本漢化包只適應了 1.21 [Sakura Ryoko](https://github.com/sakura-ryoko) **最新版本**的 `Masa Mods`，並不能保證此漢化包能夠正常套用在低於 1.21 的 Mod 中
+> 本漢化包只適應了 1.21 [Sakura Ryoko](https://github.com/sakura-ryoko) **最新版本**的 `Masa Mods`，低於 1.21 版本的 `Masa Mods` 使用此漢化包會出現翻譯缺失甚至衝突！！！
 > 
 > 有漢化錯誤多半是因為您沒有更新模組和漢化包到最新版(
 
