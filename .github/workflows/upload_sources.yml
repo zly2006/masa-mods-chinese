@@ -1,4 +1,4 @@
-name: Update Origin Files
+name: Upload Sources
 
 on:
   push:

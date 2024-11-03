@@ -1,4 +1,4 @@
-name: Update Translations
+name: Upload Translations
 
 on:
   push:
