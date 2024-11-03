@@ -23,8 +23,8 @@ jobs:
 
       - name: Generate zip file
         run: |
-            python3 generate.py -v old
-            python3 generate.py -v new
+            python3 generate.py -v classic
+            python3 generate.py -v neo
 
       - name: Create Release
         id: create_release
@@ -53,6 +53,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./masa-mods-chinese-new.zip
-          asset_name: masa-mods-chinese-new.zip
+          asset_path: ./masa-mods-chinese-neo.zip
+          asset_name: masa-mods-chinese-neo.zip
           asset_content_type: application/zip
