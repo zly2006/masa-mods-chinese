@@ -23,7 +23,7 @@ def create_resource_pack(version):
 
         with open(in_file, 'r', encoding='utf-8') as f:
             in_file = json.load(f)
-            if version == 'new':
+            if version == 'neo':
                 for key in in_file:
                     if " | " in in_file[key]:
                         in_file[key] = in_file[key].split(" | ")[1]
@@ -79,8 +79,8 @@ def zip_files(version: str):
         'pack.mcmeta',
         'pack.png',
     ]
-    if version == 'new':
-        zip_filename = './masa-mods-chinese-new.zip'
+    if version == 'neo':
+        zip_filename = './masa-mods-chinese-neo.zip'
     else:
         zip_filename = './masa-mods-chinese.zip'
     zip_files_and_folders(zip_filename, items_to_zip)
@@ -92,10 +92,10 @@ def parse_args():
     import argparse
     parser = argparse.ArgumentParser(description='Generate the MASA mods Chinese translation pack.')
     parser.add_argument('-v', '--version',
-                        choices=['old', 'new'],
+                        choices=['classic', 'neo'],
                         type=str,
                         required=False,
-                        default='old',
+                        default='classic',
                         help='The version of the translation pack.')
     return parser.parse_args()
 
