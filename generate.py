@@ -4,7 +4,6 @@ import shutil
 import subprocess
 from typing import Optional
 import zipfile
-import hjson
 
 version: Optional[str] = None
 
