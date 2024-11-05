@@ -1,0 +1,24 @@
+name: Publish to Modthinh
+
+on:
+    release:
+        types: [ published ]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        permissions: write-all
+        steps:
+          - name: Generate zip file
+            run: |
+                python3 generate.py -v classic
+            
+          - name: Upload to Modrinth
+            uses: cloudnode-pro/modrinth-publish@1.0.0
+            with:
+              token: ${{ secrets.MODRINTH_TOKEN }}
+              project: masa-mods-chinese
+              file: masa-mods-chinese.zip
+              changelog: ${{ github.event.release.body }}
+              api-domain: api.modrinth.com
+              loaders: fabric, forge
