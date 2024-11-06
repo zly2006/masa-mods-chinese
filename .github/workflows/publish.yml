@@ -148,7 +148,7 @@ jobs:
       - name: Publish to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: qloCzEiA
+          modrinth-id: IEt3hTCe
           modrinth-token: ${{ env.MODRINTH_TOKEN }}
           name: 1.21+ Masa 模組翻譯包 ${{ inputs.tag }}
           version: ${{ env.tag }}
