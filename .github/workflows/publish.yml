@@ -114,13 +114,20 @@ jobs:
         with:
           name: masa-mods-chinese.zip
 
+      - name: Remove 'v' form tag
+        id: remove_v
+        run: |
+          clean_tag="${{ inputs.tag }}"
+          tag="${clean_tag#v}"
+          echo "tag=$tag" >> $GITHUB_ENV
+
       - name: Publish to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: qloCzEiA
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          name: ${{ inputs.tag }}
-          version: Masa 模组翻译包 ${{ inputs.tag }}
+          name: Masa 模组翻译包 ${{ inputs.tag }}
+          version: ${{ env.tag }}
           version-type: release
           game-versions: 1.21.x
           changelog: '.github/changelog/${{ inputs.tag }}-changelog.md'
