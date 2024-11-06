@@ -34,6 +34,10 @@ jobs:
       #     echo "tag=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
       #     echo "::set-output name=tag::$(git describe --tags --abbrev=0)"
 
+      - name: Create Tag
+        run: git tag ${{ inputs.tag }}
+        continue-on-error: false
+
       - name: Setup python
         uses: actions/setup-python@v5
         with:
