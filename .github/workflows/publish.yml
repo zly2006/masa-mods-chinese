@@ -43,16 +43,20 @@ jobs:
         with:
           python-version: 3.12
 
-      - name: Generate zip file And Next Changelog
+      - name: Generate zip file
         run: |
             python3 generate.py -v classic
             python3 generate.py -v neo
             python3 precreate_changelog.py
+      
+      - name: Generate Changelog
+        run: |
             git config --global user.name "DreamingLri"
             git config --global user.email "3507415455@qq.com"
             git add .
             git commit -m "📝 auto generate changelog"
             git push
+        continue-on-error: true
 
       - name: Check changelog
         id: check_changelog
