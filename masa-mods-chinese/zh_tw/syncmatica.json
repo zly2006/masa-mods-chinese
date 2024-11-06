@@ -15,7 +15,7 @@
 	"syncmatica.gui.label.placement_info.owner": "上傳者",
 	"syncmatica.gui.label.placement_info.last_modified": "最後的修改者",
 	"syncmatica.gui.label.placement_info.version": "Litematica 版本：§f%d§r",
-	"syncmatica.gui.label.placement_info.schema": "我的世界：§f%s§r [資料版本 §f%d§r]",
+	"syncmatica.gui.label.placement_info.schema": "Minecraft：§f%s§r [資料版本 §f%d§r]",
 	"syncmatica.error.share_without_shift": "按下 Shift 鍵以分享原理圖",
 	"syncmatica.error.share_modified_subregions": "共享錯誤：伺服器不支援共享已修改的子區域，它需要更新",
 	"syncmatica.error.modification_deny": "被拒絕的修改請求 - 其他使用者已修改此檔案的展示位置",
