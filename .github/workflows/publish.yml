@@ -130,7 +130,7 @@ jobs:
         with:
           modrinth-id: qloCzEiA
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          name: Masa 模组翻译包 ${{ inputs.tag }}
+          name: 1.21+ Masa 模組翻譯包 ${{ inputs.tag }}
           version: ${{ env.tag }}
           version-type: release
           game-versions: 1.21.x
