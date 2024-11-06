@@ -134,6 +134,6 @@ jobs:
           version: ${{ env.tag }}
           version-type: release
           game-versions: 1.21.x
-          changelog: '.github/changelog/${{ inputs.tag }}-changelog.md'
+          changelog: './.github/changelog/${{ inputs.tag }}-changelog.md'
           files: ./masa-mods-chinese.zip
           loaders: minecraft
