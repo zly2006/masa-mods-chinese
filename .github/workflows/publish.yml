@@ -92,3 +92,28 @@ jobs:
           asset_path: ./masa-mods-chinese-neo.zip
           asset_name: masa-mods-chinese-neo.zip
           asset_content_type: application/zip
+
+  modrinth_publish:
+    name: Publish to Modrinth
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: masa-mods-chinese.zip
+
+      - name: Publish to Modrinth
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: qloCzEiA
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          name: ${{ inputs.tag }}
+          version: Masa 模组翻译包 ${{ inputs.tag }}
+          version-type: release
+          game-versions: 1.21.x
+          changelog: '.github/changelog/${{ inputs.tag }}-changelog.md'
+          files: ./masa-mods-chinese.zip
+          loaders: minecraft
