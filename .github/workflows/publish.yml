@@ -48,6 +48,9 @@ jobs:
             python3 generate.py -v classic
             python3 generate.py -v neo
             python3 precreate_changelog.py
+            git add .
+            git commit -m "📝 auto generate changelog"
+            git push
 
       - name: Check changelog
         id: check_changelog
