@@ -25,16 +25,41 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # - name: Get Latest Tag
+      #   id: get_tag
+      #   run: |
+      #     echo "tag=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+      #     echo "::set-output name=tag::$(git describe --tags --abbrev=0)"
 
       - name: Setup python
         uses: actions/setup-python@v5
         with:
           python-version: 3.12
 
-      - name: Generate zip file
+      - name: Generate zip file And Next Changelog
         run: |
             python3 generate.py -v classic
             python3 generate.py -v neo
+            python3 precreate_changelog.py
+
+      - name: Check changelog
+        id: check_changelog
+        run: |
+          if [ ! -f ./.github/changelog/${{ inputs.tag }}-changelog.md ]; then
+            echo "Changelog file not found"
+            exit 1
+          fi
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: masa-mods-chinese.zip
+          path: |
+            ./masa-mods-chinese.zip
+            ./.github/changelog/${{ inputs.tag }}-changelog.md
 
       - name: Create Release
         id: create_release
@@ -42,10 +67,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ inputs.tag }}
+          release_name: Release ${{ inputs.tag }}
           draft: false
           prerelease: false
+          body_path: "./.github/changelog/${{ inputs.tag }}-changelog.md"
 
       - name: Upload old version
         uses: actions/upload-release-asset@v1
