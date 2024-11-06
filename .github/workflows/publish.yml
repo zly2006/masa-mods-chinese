@@ -48,6 +48,8 @@ jobs:
             python3 generate.py -v classic
             python3 generate.py -v neo
             python3 precreate_changelog.py
+            git config --global user.name "DreamingLri"
+            git config --global user.email "3507415455@qq.com"
             git add .
             git commit -m "📝 auto generate changelog"
             git push
