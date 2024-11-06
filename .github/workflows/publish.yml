@@ -17,6 +17,15 @@ on:
         type: boolean
         default: true
 
+      publisher:
+        description: '发布者'
+        required: true
+        type: choice
+        options:
+          - 'DreamingLri'
+          - '雪鈴 SnowLin'
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -43,11 +52,20 @@ jobs:
         with:
           python-version: 3.12
 
-      - name: Generate zip file And Next Changelog
+      - name: Generate zip file
         run: |
             python3 generate.py -v classic
             python3 generate.py -v neo
             python3 precreate_changelog.py
+      
+      - name: Generate Changelog
+        run: |
+            git config --global user.name "DreamingLri"
+            git config --global user.email "3507415455@qq.com"
+            git add .
+            git commit -m "📝 auto generate changelog"
+            git push
+        continue-on-error: true
 
       - name: Check changelog
         id: check_changelog
@@ -101,7 +119,7 @@ jobs:
     name: Publish to Modrinth
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ inputs.publish-to-modrinth == 'true' }}
+    if: ${{ inputs.publish-to-modrinth }}
 
     steps:
 
@@ -110,15 +128,32 @@ jobs:
         with:
           name: masa-mods-chinese.zip
 
+      - name: Remove 'v' form tag
+        id: remove_v
+        run: |
+          clean_tag="${{ inputs.tag }}"
+          tag="${clean_tag#v}"
+          echo "tag=$tag" >> $GITHUB_ENV
+
+      - name: Set Modrinth Token based on Publisher
+        id: set_token
+        run: |
+          if [ "${{ inputs.publisher }}" == "DreamingLri" ]; then
+            echo "MODRINTH_TOKEN=${{ secrets.MODRINTH_TOKEN_DREAMINGLRI }}" >> $GITHUB_ENV
+          else
+            echo "MODRINTH_TOKEN=${{ secrets.MODRINTH_TOKEN_SNOWLIN }}" >> $GITHUB_ENV
+          fi
+        
+
       - name: Publish to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: qloCzEiA
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          name: ${{ inputs.tag }}
-          version: Masa 模组翻译包 ${{ inputs.tag }}
+          modrinth-id: IEt3hTCe
+          modrinth-token: ${{ env.MODRINTH_TOKEN }}
+          name: 1.21+ Masa 模組翻譯包 ${{ inputs.tag }}
+          version: ${{ env.tag }}
           version-type: release
           game-versions: 1.21.x
-          changelog: '.github/changelog/${{ inputs.tag }}-changelog.md'
+          changelog-file: './.github/changelog/${{ inputs.tag }}-changelog.md'
           files: ./masa-mods-chinese.zip
           loaders: minecraft
