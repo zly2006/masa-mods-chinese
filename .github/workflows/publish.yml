@@ -3,9 +3,19 @@
 name: Public Releases
 
 on:
-  push:
-    tags:
-      - 'v*.*.*'  # 仅在推送标签时触发
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: '要发布的 Tag'
+        required: true
+        type: string
+        default: 'v1.0.0'
+
+      publish-to-modrinth:
+        description: '是否发布到 Modrinth'
+        required: true
+        type: boolean
+        default: true
 
 jobs:
   build:
