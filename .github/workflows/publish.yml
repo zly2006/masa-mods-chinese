@@ -17,6 +17,15 @@ on:
         type: boolean
         default: true
 
+      publisher:
+        description: '发布者'
+        required: true
+        type: choice
+        options:
+          - 'DreamingLri'
+          - '雪鈴 SnowLin'
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -126,11 +135,21 @@ jobs:
           tag="${clean_tag#v}"
           echo "tag=$tag" >> $GITHUB_ENV
 
+      - name: Set Modrinth Token based on Publisher
+        id: set_token
+        run: |
+          if [ "${{ inputs.publisher }}" == "DreamingLri" ]; then
+            echo "MODRINTH_TOKEN=${{ secrets.MODRINTH_TOKEN_DREAMINGLRI }}" >> $GITHUB_ENV
+          else
+            echo "MODRINTH_TOKEN=${{ secrets.MODRINTH_TOKEN_SNOWLIN }}" >> $GITHUB_ENV
+          fi
+        
+
       - name: Publish to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: qloCzEiA
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-token: ${{ env.MODRINTH_TOKEN }}
           name: 1.21+ Masa 模組翻譯包 ${{ inputs.tag }}
           version: ${{ env.tag }}
           version-type: release
