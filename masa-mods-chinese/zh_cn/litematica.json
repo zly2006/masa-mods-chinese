@@ -660,7 +660,7 @@
     "litematica.gui.label.data_fixer_mode.below_112X": "仅低于 1.12.x",
     "litematica.gui.label.data_fixer_mode.never": "从不",
     "litematica.gui.label.loaded_schematic.modified_on": "§6修改于 %s§r",
-    "litematica.gui.label.material_list.abbr.shulker_box": "SB",
+    "litematica.gui.label.material_list.abbr.shulker_box": "盒",
     "litematica.gui.label.material_list.title.available": "可用",
     "litematica.gui.label.material_list.title.item": "项目",
     "litematica.gui.label.material_list.title.missing": "缺少",
