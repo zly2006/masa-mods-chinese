@@ -718,7 +718,7 @@
     "litematica.gui.label.schematic_projects.version_name": "版本名:",
     "litematica.gui.label.schematic_save.checkbox.ignore_entities": "忽略实体",
     "litematica.gui.label.schematic_save.checkbox.save_from_schematic_world": "从结构世界中保存",
-    "litematica.gui.label.schematic_save.hover_info.save_from_schematic_world": "如果启用该选项，那么会从“结构世界”中选定的内容来创建结构文件，而不是从普通的原版世界中创建\n这可以让你在不需要将结构粘贴到临时创造世界的情况下，直接合并或裁剪结构文件",
+    "litematica.gui.label.schematic_save.hover_info.save_from_schematic_world": "如果启用该选项，那么会从「结构世界」中选定的内容来创建结构文件，而不是从普通的原版世界中创建\n这可以让你在不需要将结构粘贴到临时创造世界的情况下，直接合并或裁剪结构文件",
     "litematica.gui.label.schematic_save.checkbox.visible_blocks_only": "仅包含可见方块 [实验性内容]",
     "litematica.gui.label.schematic_save.checkbox.support_blocks": "支撑方块",
     "litematica.gui.label.schematic_save.hover_info.support_blocks": "在 §6[仅包含可见方块]§r 模式下，包含所有必要的支撑方块，例如红石中继器、红石比较器、地毯等可能受重力影响的方块",
