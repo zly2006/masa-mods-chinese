@@ -717,7 +717,7 @@
     "litematica.gui.label.schematic_projects.version_entry": "请参见。%d - %s",
     "litematica.gui.label.schematic_projects.version_name": "版本名:",
     "litematica.gui.label.schematic_save.checkbox.ignore_entities": "忽略实体",
-    "litematica.gui.label.schematic_save.hover_info.hold_shift_to_overwrite": "按住 Shift 覆盖现有文件",
+    "litematica.gui.label.schematic_save.hoverinfo.hold_shift_to_overwrite": "按住 Shift 覆盖现有文件",
     "litematica.gui.label.schematic_verifier.count": "数量",
     "litematica.gui.label.schematic_verifier.expected": "预期",
     "litematica.gui.label.schematic_verifier.found": "找到",
