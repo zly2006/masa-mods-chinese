@@ -1,6 +1,10 @@
 {
   "pack": {
-    "pack_format": 22,
-    "description": "§e[1.20.4]MASA全家桶汉化包"
+    "pack_format": 32,
+    "description": "§e[1.20]MASA全家桶汉化包-v1.2.1",
+    "supported_formats": [
+      9,
+      32
+    ]
   }
 }

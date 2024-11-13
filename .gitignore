@@ -1,4 +1,5 @@
+assets/
+masa-mods-chinese.zip
 .conda
-/translate
-/zh_cn
-/replace.py
+masa-mods-chinese-neo.zip
+masa-mods-chinese/crowdin.yml
