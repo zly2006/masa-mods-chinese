@@ -1,7 +1,7 @@
 ## v1.3.5
 ### 更新内容
 [itemscroller](https://github.com/sakura-ryoko/itemscroller/releases/tag/1.21.3-0.25.0-sakura.6)
-- 新增`massCraftHold`-`一直批量合成`的翻译
+- 新增`massCraftHold` - `一直批量合成`的翻译
 
 [litematica]()
 
