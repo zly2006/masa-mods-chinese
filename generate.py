@@ -39,23 +39,12 @@ def create_resource_pack(version):
         
 
 def rename_mcmeta():
-    def get_git_tags():
-        try:
-            result = subprocess.run(["git", "describe", "--tags", "--abbrev=0"], capture_output=True, text=True, check=True)
-            tag = result.stdout.splitlines()
-            return tag
-        except subprocess.CalledProcessError as e:
-            print(f"Error while running git command: {e}")
-            return []
-
-    tag = get_git_tags()
-
     with open('pack.mcmeta', 'r', encoding='utf-8-sig') as f:
         data = json.load(f)
 
     data['pack']['pack_format'] = 32
     data['pack']['supported_formats'] = [ 9, 32 ]
-    data['pack']['description'] = '§e[1.20]MASA全家桶汉化包' + '-' + tag[0]
+    data['pack']['description'] = '§e[1.20]MASA全家桶汉化包'
 
     with open('pack.mcmeta', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
