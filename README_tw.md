@@ -17,14 +17,7 @@
 > [!IMPORTANT]
 > 本漢化為個人漢化版本，並非官方漢化
 
-由於醉夢巔峰不再進行 `Masa Mods` 1.21 版本之後的漢化，本人進行了原本漢化的重構，以適應 1.21 [Sakura Ryoko](https://github.com/sakura-ryoko) 版本的 `Masa Mods`
-
-如果您想查看醉夢巔峰 1.20.1 版本的漢化，請點擊 [這裡](https://github.com/DreamingLri/masa-mods-chinese/tree/1.20)
-
-> [!WARNING]  
-> 本漢化包只適應了 1.21 [Sakura Ryoko](https://github.com/sakura-ryoko) **最新版本**的 `Masa Mods`，低於 1.21 版本的 `Masa Mods` 使用此漢化包會出現翻譯缺失甚至衝突！！！
-> 
-> 有漢化錯誤多半是因為您沒有更新模組和漢化包到最新版(
+這裏是 `1.20.x` `1.21.x` 版本的重構翻譯，如果您使用的是 `1.21.x` 版本的 `Masa Mods` 請前往[這裏](https://github.com/DreamingLri/masa-mods-chinese)下載
 
 ## 如何使用
 

@@ -1,6 +1,6 @@
 # masa-mods-chinese
 
-简体中文 | [繁體中文](https://github.com/DreamingLri/masa-mods-chinese/blob/1.21/README_tw.md)
+简体中文 | [繁體中文](https://github.com/DreamingLri/masa-mods-chinese/blob/1.20.4/README_tw.md)
 
 这是一个 `Masa Mods` 的汉化资源包，包括 `itemscroller` `litematica` `malilib` `minihud` `tweakeroo` `syncmatica` `litematica-printer` 模组的汉化
 
@@ -17,14 +17,7 @@
 > [!IMPORTANT]
 > 本汉化为个人汉化版本，并非官方汉化
 
-由于醉梦巅峰不再进行 `Masa Mods` 1.21 版本之后的汉化，本人进行了原本汉化的重构，以适应 1.21 [Sakura Ryoko](https://github.com/sakura-ryoko) 版本的 `Masa Mods`
-
-如果您想查看醉梦巅峰 1.20.1 版本的汉化，请点击 [这里](https://github.com/DreamingLri/masa-mods-chinese/tree/1.20)
-
-> [!WARNING]  
-> 本汉化包只适配了 1.21 [Sakura Ryoko](https://github.com/sakura-ryoko) **最新版本**的 `Masa Mods`，低于 1.21 版本的 `Masa Mods` 使用该汉化包会出现翻译缺失甚至冲突！！！
-> 
-> 有汉化错误多半是因为您没有更新模组和汉化包到最新版(
+这里是 `1.20.x` `1.19.x` 版本的重构翻译，如果您使用的是 `1.21.x` 版本的 `Masa Mods` 请前往[这里](https://github.com/DreamingLri/masa-mods-chinese)下载
 
 ## 如何使用
 
