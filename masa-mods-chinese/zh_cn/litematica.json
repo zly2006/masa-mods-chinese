@@ -252,7 +252,7 @@
     "litematica.config.generic.comment.easyPlaceVanillaReach": "如果启用此选项，将把手长从 6 减少到原版 Minecraft 的默认值（4.5），以防止服务器拒绝放置远处的方块",
     "litematica.config.generic.comment.entityDataSync": "使用 Servux 的实体数据同步协议，从服务器获取实体数据",
     "litematica.config.generic.comment.entityDataSyncBackup": "当 Servux 不可用时，使用原版 NBT 查询方法\n此方法需要管理员权限",
-    "litematica.config.generic.comment.entityDataSyncCacheTimeout": "实体数据缓存的超时时间值，以秒为单位。值越低，更新越频繁，但如果您的原理图未能保存所有的NBT数据，您可能需要考虑设置更高的值",
+    "litematica.config.generic.comment.entityDataSyncCacheTimeout": "实体数据缓存的超时时间值，以秒为单位。值越低，更新越频繁。\n但如果您的原理图未能保存所有的 NBT 数据，您可能需要考虑设置更高的值",
     "litematica.config.generic.comment.entityDataSyncLoadNbt": "将同步的 NBT 数据加载到客户端世界中\n§6警告！此功能会导致与依赖这些数据的其他模组不兼容",
     "litematica.config.generic.comment.executeRequireHoldingTool": "需要持有已启用的工具项以使 §6[执行操作]§f 热键工作",
     "litematica.config.generic.comment.fixChestMirror": "修复投影中破碎的大箱子",
