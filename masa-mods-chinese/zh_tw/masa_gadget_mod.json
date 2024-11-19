@@ -106,6 +106,6 @@
   "masa_gadget_mod.message.setFavorite": "收藏",
   "masa_gadget_mod.message.showAllOptions": "顯示所有設定項",
   "masa_gadget_mod.message.showFavorite": "只顯示收藏的設定項",
-  "masa_gadget_mod.message.spawnPos": "離玩家最近的能生怪的座標為: [%d, %d, %d]",
+  "masa_gadget_mod.message.spawnPos": "離玩家最近的能生怪的座標為：[%d, %d, %d]",
   "masa_gadget_mod.message.syncAllEntityDataSuccess": "成功同步所有實體資料"
 }
