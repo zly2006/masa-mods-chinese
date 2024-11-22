@@ -337,7 +337,7 @@
     "minihud.config.info_toggle.comment.infoFacing": "显示玩家当前的朝向",
     "minihud.config.info_toggle.comment.infoFurnaceXp": "显示目标熔炉中的经验。\n§6注意：这仅适用于单人游戏（没有服务器端支持，\n§6将无法正常显示，但会在服务器有 Servux Mod 时可能出现）",
     "minihud.config.info_toggle.comment.infoFPS": "显示当前帧数",
-    "minihud.config.info_toggle.comment.infoHoneyLevel": "显示目标蜂巢或蜂箱中的蜜蜂数量。\n§6注意：这仅适用于单人游戏（没有服务器端支持，\n§6将无法正常显示，但会在服务器有 Servux Mod 时可能出现）",
+    "minihud.config.info_toggle.comment.infoHoneyLevel": "显示目标蜂巢或蜂箱中的蜂蜜数量。\n§6注意：这仅适用于单人游戏（没有服务器端支持，\n§6将无法正常显示，但会在服务器有 Servux Mod 时可能出现）",
     "minihud.config.info_toggle.comment.infoHorseSpeed": "显示玩家当前所骑的马的速度属性（米/秒）",
     "minihud.config.info_toggle.comment.infoHorseJump": "显示玩家当前所骑的马的跳跃高度（格）",
     "minihud.config.info_toggle.comment.infoLightLevel": "显示当前光照等级",
