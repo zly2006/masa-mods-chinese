@@ -179,6 +179,8 @@
     "tweakeroo.config.generic.comment.zoomAdjustMouseSensitivity": "開啟此項後，在按下 §6[啟用望遠鏡]§r 快捷鍵時，會降低靈敏度",
     "tweakeroo.config.generic.comment.zoomFov": "設定使用望遠鏡時的視野角度",
     "tweakeroo.config.generic.comment.zoomResetFovOnActivate": "如果使用滑鼠滾輪調整了望遠鏡縮放視野，\n在停用時重設該視野",
+    "tweakeroo.config.generic.prettyName.freeCameraPlayerInputs": "靈魂出竅玩家操作",
+    "tweakeroo.config.generic.prettyName.freeCameraPlayerMovement": "靈魂出竅玩家移動",
     "tweakeroo.config.fixes.name.elytraFix": "ElytraFix | 鞘翅修復",
     "tweakeroo.config.fixes.name.macHorizontalScroll": "MacScroll | MAC 捲動修復",
     "tweakeroo.config.fixes.name.ravagerClientBlockBreakFix": "RavagerFix | 劫毀獸幽靈方塊修復",

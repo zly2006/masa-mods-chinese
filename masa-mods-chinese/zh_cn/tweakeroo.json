@@ -179,6 +179,8 @@
     "tweakeroo.config.generic.comment.zoomAdjustMouseSensitivity": "开启此项后，在按下 §6[启用望远镜]§r 快捷键时，会降低鼠标灵敏度",
     "tweakeroo.config.generic.comment.zoomFov": "设置使用望远镜时的视野角度",
     "tweakeroo.config.generic.comment.zoomResetFovOnActivate": "如果使用鼠标滚轮调整了望远镜缩放视野，\n在停用时重置该视野",
+    "tweakeroo.config.generic.prettyName.freeCameraPlayerInputs": "灵魂出窍玩家操作",
+    "tweakeroo.config.generic.prettyName.freeCameraPlayerMovement": "灵魂出窍玩家移动",
     "tweakeroo.config.fixes.name.elytraFix": "ElytraFix | 鞘翅修复",
     "tweakeroo.config.fixes.name.macHorizontalScroll": "MacScroll | MAC 滚动修复",
     "tweakeroo.config.fixes.name.ravagerClientBlockBreakFix": "RavagerFix | 劫掠兽幽灵方块修复",
