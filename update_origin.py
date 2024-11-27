@@ -7,7 +7,7 @@ files = {
     'minihud': 'https://github.com/sakura-ryoko/minihud/raw/pre-rewrite/fabric/1.21.3/src/main/resources/assets/minihud/lang/en_us.json',
     'tweakeroo': 'https://github.com/sakura-ryoko/tweakeroo/raw/pre-rewrite/fabric/1.21.3/src/main/resources/assets/tweakeroo/lang/en_us.json',
     'itemscroller': 'https://github.com/sakura-ryoko/itemscroller/raw/pre-rewrite/fabric/1.21.3/src/main/resources/assets/itemscroller/lang/en_us.json',
-    'syncmatica': 'https://github.com/sakura-ryoko/syncmatica/raw/1.21.3/src/main/resources/assets/syncmatica/lang/en_us.json',
+    'syncmatica': 'https://github.com/sakura-ryoko/syncmatica/raw/1.21.3/src/main/resources/assets/syncmatica/lang/en_US.json',
     'litematica-printer': 'https://github.com/sakura-ryoko/litematica-printer/raw/1.21.3/src/main/resources/assets/litematica-printer/lang/en_us.json'
 }
 
